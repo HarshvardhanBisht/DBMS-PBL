@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<h1>Your watchlist</h1><h2>Movies</h2>{% for x in movies %}<p>{{x.title}}</p>{% else %}<p>No movies saved.</p>{% endfor %}<h2>Series</h2>{% for x in series %}<p>{{x.title}}</p>{% else %}<p>No series saved.</p>{% endfor %}{% endblock %}
